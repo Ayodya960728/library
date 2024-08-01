@@ -41,9 +41,9 @@ public class BookController {
         return bookService.get(id);
     }
 
-    public String searchBook(Integer bookId) throws Exception {
-      return null;
-    }
+   // public String searchBook(Integer bookId) throws Exception {
+     // return null;
+   // }
 
     public BookDto findBook(String bookId) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody

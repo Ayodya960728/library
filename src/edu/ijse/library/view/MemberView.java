@@ -292,7 +292,7 @@ public class MemberView extends javax.swing.JFrame {
         }
     }
 
-    private void searchMember() {
+    private void searchMember(){
          try {
             int selectedRow = tblMember.getSelectedRow();
             if(selectedRow != -1){

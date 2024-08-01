@@ -18,6 +18,8 @@ public class BookView extends javax.swing.JFrame {
     
     private BookController bookController;
     private Integer BookId;
+    private BookDto var;
+    private Object e;
 
     /**
      * Creates new form BookView
@@ -353,13 +355,16 @@ public class BookView extends javax.swing.JFrame {
     
     private void searchBook() {
         try {
-            String bookId = tblBook.getValueAt(tblBook.getSelectedRow(), 0).toString();
-            BookDto dto = bookController.searchBook(bookId);
+            int selectedRow = tblBook.getSelectedRow();
+            if (selectedRow != -1) {
+                int bookId = (int) tblBook.getValueAt(selectedRow, 0);
+                BookDto dto = bookController.get(bookId);
+            
             
             
             if (dto != null) {
-                txtBookId.setText(Integer.toString(dto.getId()));
-                txtBookTitle.setText(dto.getTitle());
+                 txtBookId.setText(Integer.toString(dto.getId()));
+                txtBookTitle.setText(dto.getTitle()); 
                 txtAuthor.setText(dto.getAuthor());
                 txtPublisher.setText(dto.getPublisher());
                 txtYear.setText(Integer.toString(dto.getYear()));
@@ -367,16 +372,17 @@ public class BookView extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(this, "Book Not Found");
             }
+}
         } catch (Exception e) {
             e.printStackTrace();
             JOptionPane.showMessageDialog(this, "Error at Loading Book");
+                }
         }
-    }
-    
+
     private void deleteBook() {
         try {
-            String bookId = txtBookId.getText();
-            String resp = bookController.delete(BookId);
+            int bookId = Integer.parseInt(txtBookId.getText());
+            String resp = bookController.delete(bookId);
             JOptionPane.showMessageDialog(this, resp);
             clearForm();
             loadTable();
@@ -384,17 +390,29 @@ public class BookView extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Error at Delete Book");
         }
     }
-    
+
     private void updateBook() {
         try {
-            BookDto bookDto = new BookDto(Integer.parseInt(txtBookId.getText()), txtBookTitle.getText(), txtAuthor.getText(), txtPublisher.getText(), Integer.parseInt(txtYear.getText()), Integer.parseInt(txtCategoryId.getText()));
-            String resp = bookController.update(bookDto);
+             System.out.println("Updating book with ID: " + txtBookId.getText());
+              BookDto dto = new BookDto(
+            Integer.parseInt(txtBookId.getText()), 
+            txtBookTitle.getText(), 
+            txtAuthor.getText(), 
+            txtPublisher.getText(), 
+            Integer.parseInt(txtYear.getText()), 
+            Integer.parseInt(txtCategoryId.getText())
+             );
+            String resp = bookController.update(dto);
             JOptionPane.showMessageDialog(this, resp);
             loadTable();
             clearForm();
-            
         } catch (Exception e) {
+            e.printStackTrace();
             JOptionPane.showMessageDialog(this, "Error at Update Book");
         }
     }
-}
+    }
+    
+   
+
+    
