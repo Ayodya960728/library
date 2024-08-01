@@ -12,5 +12,9 @@ import edu.ijse.library.entity.BorrowingsEntity;
  * @author HP
  */
 public interface BorrowingsDao extends CrudDao<BorrowingsEntity, String> {
+
+    public boolean delete(Integer id);
+
+    public BorrowingsEntity get(Integer id);
     
 }

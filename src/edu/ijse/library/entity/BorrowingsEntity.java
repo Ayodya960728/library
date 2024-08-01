@@ -4,6 +4,9 @@
  */
 package edu.ijse.library.entity;
 
+import edu.ijse.library.dto.MemberDto;
+import java.util.ArrayList;
+
 /**
  *
  * @author HP
@@ -16,6 +19,7 @@ public class BorrowingsEntity {
     private String due_date;
     private String return_date;
     private String fine;
+    public ArrayList<MemberDto> get;
 
     public BorrowingsEntity() {
     }

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/custom/impl/CategoryDaoImpl.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/db/DBConnection.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/controller/BorrowingsController.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/custom/impl/BorrowingsDaoImpl.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/custom/CategoryDao.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/SuperService.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/view/MemberView.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/CrudDao.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/custom/BorrowingsDao.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/controller/MemberController.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/Main.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/custom/BookDao.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dto/BookDto.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/view/BorrowingsView.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/custom/impl/BookServiceImpl.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/SuperDao.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/custom/MemberDao.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/controller/BookController.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/controller/CategoryController.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/custom/CategoryService.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dto/CategoryDto.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/DaoFactory.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/entity/MemberEntity.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/view/BookView.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/custom/impl/BorrowingsServiceImpl.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/custom/BorrowingsService.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/custom/MemberService.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/custom/impl/BookDaoImpl.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/entity/BookEntity.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dto/BorrowingsDto.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dto/MemberDto.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/entity/BorrowingsEntity.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/entity/CategoryEntity.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/custom/impl/MemberServiceImpl.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/CrudUtil.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/custom/BookService.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/view/CategoryView.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/ServiceFactory.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/service/custom/impl/CategoryServiceImpl.java</file>
+            <file>file:/C:/Users/HP/Documents/NetBeansProjects/CMJD107.Library/src/edu/ijse/library/dao/custom/impl/MemberDaoImpl.java</file>
+        </group>
+    </open-files>
+</project-private>

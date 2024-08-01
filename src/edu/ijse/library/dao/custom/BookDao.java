@@ -12,5 +12,4 @@ import edu.ijse.library.entity.BookEntity;
  * @author HP
  */
 public interface BookDao extends CrudDao<BookEntity, Object> {
-    
 }

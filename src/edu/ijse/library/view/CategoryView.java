@@ -269,7 +269,7 @@ private void loadTable() {
            clearForm();
            loadTable();
         }catch (Exception e) {
-           JOptionPane.showMessageDialog(this, "Error at Delete Item"); 
+           JOptionPane.showMessageDialog(this, "Error at Delete Category"); 
         }
     }
 

@@ -18,6 +18,7 @@ import edu.ijse.library.entity.BorrowingsEntity;
 import edu.ijse.library.entity.MemberEntity;
 import edu.ijse.library.service.custom.BorrowingsService;
 import java.sql.Connection;
+import java.util.ArrayList;
 
 /**
  *
@@ -92,6 +93,64 @@ private BorrowingsDao borrowingsDao = (BorrowingsDao) DaoFactory.getInstance().g
         } finally {
             connection.setAutoCommit(true);
         }
+    }
+
+    @Override
+    public String save(BorrowingsDto borrowingsDto) throws Exception {
+        BorrowingsEntity entity = getBorrowingsEntity(borrowingsDto);
+        return borrowingsDao.create(entity) ? "Success" : "Fail";
+    }
+    @Override
+    public String update(BorrowingsDto borrowingsDto) throws Exception {
+        BorrowingsEntity entity = getBorrowingsEntity(borrowingsDto);
+        return borrowingsDao.update(entity) ? "Success" : "Fail";
+    }
+
+    @Override
+    public String delete(Integer id) throws Exception {
+       return borrowingsDao.delete(id) ? "Success" : "Fail";
+    }
+
+    @Override
+    public BorrowingsDto get(Integer id) throws Exception {
+        BorrowingsEntity entity = borrowingsDao.get(id);
+        if (entity != null) {
+            return getBorrowingsDto(entity);
+        }
+        return null;
+    }
+
+    @Override
+    public ArrayList<BorrowingsDto> getAll() throws Exception {
+        ArrayList<BorrowingsEntity> borrowingsEntitys = borrowingsDao.getAll();
+        if(borrowingsEntitys != null && !borrowingsEntitys.isEmpty()){
+            ArrayList<BorrowingsDto> borrowingsDtos = new ArrayList<>();
+            
+            for (BorrowingsEntity borrowingsEntity : borrowingsEntitys) {
+                borrowingsDtos.add(getBorrowingsDto(borrowingsEntity));
+            }
+            return borrowingsDtos;
+        }
+        return null;
+    }
+
+    private BorrowingsEntity getBorrowingsEntity(BorrowingsDto borrowingsDto) {
+        return new BorrowingsEntity(borrowingsDto.getBook_id(), 
+                borrowingsDto.getMember_id(), 
+                borrowingsDto.getBorrow_date(),
+                borrowingsDto.getDue_date(), 
+                borrowingsDto.getReturn_date(), 
+                borrowingsDto.getFine());
+    }
+    
+    private BorrowingsDto getBorrowingsDto(BorrowingsEntity entity) {
+        return new BorrowingsDto(entity.getBook_id(), 
+                entity.getMember_id(),
+                entity.getBorrow_date(),
+                entity.getDue_date(), 
+                entity.getReturn_date(), 
+                entity.getFine(), 
+                entity.get);
     }
 
 }

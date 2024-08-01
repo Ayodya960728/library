@@ -4,7 +4,10 @@
  */
 package edu.ijse.library;
 
+import edu.ijse.library.view.BookView;
+import edu.ijse.library.view.BorrowingsView;
 import edu.ijse.library.view.CategoryView;
+import edu.ijse.library.view.MemberView;
 
 /**
  *
@@ -16,8 +19,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception {
-        System.out.println("");
-        new CategoryView().setVisible(true);
+        new BookView().setVisible(true);
     }
     
 }
